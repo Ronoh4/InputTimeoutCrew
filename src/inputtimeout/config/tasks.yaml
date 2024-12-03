@@ -1,0 +1,17 @@
+research_task:
+  description: >
+    Conduct a comprehensive research about {topic} using available tools.
+    Use the results to extract and summarize relevant information from the top two websites.
+  expected_output: >
+    A comprehensive report summarizing the information gathered from the top two parsed websites.
+  agent: topic_researcher
+
+
+writing_task:
+  description: >
+    Review the research report you received and use it to create a brief article of 300 words about {topic}. 
+    Ensure the content is concise, clear, and engaging, adhering to a word limit of 300 words.
+  expected_output: >
+    A concise 300-word article that covers the main items of {topic}, each with focused information.
+    The final article should be structured and formatted as markdown without '```'.
+  agent: article_writer
